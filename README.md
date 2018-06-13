@@ -27,6 +27,7 @@ cd /etc
 git clone git@github.com:chilumbugeorge/consul_agent_redis.git
 sudo mv consul_agent_redis consul.d
 ```
+**Update some config in the consul package**
 Update the /etc/consul.d/config.json file and change values for the following config variables appropriately: 
 1. "datacenter" 
 2. "encrypt"   
@@ -36,6 +37,10 @@ Update the /etc/consul.d/config.json file and change values for the following co
 ```
 consul keygen
 ```
+Update the /etc/consul.d/services.json, /etc/consul.d/scripts/master.json and /etc/consul.d/scripts/slave.json service files and change the values for the following config variables appropriately:
+1. "name" 
+
+For example, if your redis server name is redis-session-1, then an appropriate nalue for name would be "redis-session". 
 
 **Create some useful directories not included in the package**
 ```
