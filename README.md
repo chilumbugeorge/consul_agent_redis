@@ -23,9 +23,8 @@ sudo adduser consul
 
 **Download the Consul Redis Package**
 ```
-cd /etc
 git clone git@github.com:chilumbugeorge/consul_agent_redis.git
-sudo mv consul_agent_redis consul.d
+sudo mv consul_agent_redis /etc/consul.d
 ```
 **Update some config in the consul package**
 Update the /etc/consul.d/config.json file and change values for the following config variables appropriately: 
