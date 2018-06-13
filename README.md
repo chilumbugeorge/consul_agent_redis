@@ -10,8 +10,8 @@ You can download the latest consul from [here](https://releases.hashicorp.com/co
 ```
 cd /user/local/bin
 sudo wget https://releases.hashicorp.com/consul/1.0.6/consul_1.0.6_linux_amd64.zip
-sudo unzip consul_*
-sudo rm consul_*
+sudo unzip consul_1.0.6_linux_amd64.zip
+sudo rm consul_1.0.6_linux_amd64.zip
 ```
 
 **Add consul user**
