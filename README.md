@@ -60,9 +60,12 @@ exec consul agent -node-id bab02cca-71e9-416e-bc1c-6533c454cf83 -config-dir /etc
 ```
 (uuidgen | awk '{print tolower($0)}')
 ```
-
-For Ubuntu 16.04 add the following config in the startup config file /etc/systemd/system/consul.service:
+Then to run consul, we do
 ```
+sudo start consul
+```
+For Ubuntu 16.04 add the following config in the startup config file /etc/systemd/system/consul.service:
+
 [Unit]
 Description=Consul
 Documentation=https://www.consul.io/
