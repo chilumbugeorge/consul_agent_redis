@@ -70,7 +70,7 @@ Then to run consul, we do
 sudo start consul
 ```
 For Ubuntu 16.04 add the following config in the startup config file /etc/systemd/system/consul.service:
-
+```
 [Unit]
 Description=Consul
 Documentation=https://www.consul.io/
@@ -83,6 +83,7 @@ LimitNOFILE=65536
 [Install]
 WantedBy=multi-user.target
 ```
+
 Then to run consul we do:
 ```
 sudo systemctl daemon-reload
