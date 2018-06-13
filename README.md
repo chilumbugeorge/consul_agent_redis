@@ -21,7 +21,7 @@ sudo adduser consul
 
 **Note**: for password when prompted, just use consul as password
 
-**Download the Consul Redis Package"
+**Download the Consul Redis Package**
 ```
 cd /etc
 git clone git@github.com:chilumbugeorge/consul_agent_redis.git
@@ -32,7 +32,7 @@ Update the /etc/consul.d/config.json file and change values for the following co
 2. "encrypt"   
 3. "start_join"
 
-start_join IPs should be those of the consul servers (ideally 3 or more, but always odd numbers of servers). For "encrypt", you can get generate the value by running the following command in the terminal:
+"start_join" IPs should be those of the consul servers (ideally 3 or more, but always odd numbers of servers). For "encrypt", you can get generate the value by running the following command in the terminal:
 ```
 consul keygen
 ```
