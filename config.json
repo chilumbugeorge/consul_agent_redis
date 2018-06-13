@@ -1,0 +1,17 @@
+{
+    "client_addr": "0.0.0.0",
+    "data_dir": "/var/consul",
+    "datacenter": "taipei",
+    "enable_syslog": true,
+    "encrypt": "gBW9O1eILH2yaiTZ3UKrsZ==",
+    "leave_on_terminate": true,
+    "enable_script_checks": true,
+    "log_level": "INFO",
+    "rejoin_after_leave": true,
+    "server": false,
+    "start_join": [
+        "10.1.9.100",
+        "10.1.9.101",
+        "10.1.9.102",
+    ]
+}

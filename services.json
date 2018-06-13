@@ -1,0 +1,15 @@
+{
+    "services": [
+        {
+            "name": "redis-name",
+            "port": 6379,
+            "checks": [
+                {
+                    "args": ["/etc/consul.d/scripts/redis.sh"],
+                    "interval": "5s"
+                }
+            ],
+            "enableTagOverride": true
+        }
+    ]
+}
