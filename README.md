@@ -21,7 +21,7 @@ sudo adduser consul
 
 **Note**: for password when prompted, just use consul as password
 
-**Download the Consul Redis Package**
+**Download the Consul Agent Redis Package**
 ```
 git clone git@github.com:chilumbugeorge/consul_agent_redis.git
 sudo mv consul_agent_redis /etc/consul.d
